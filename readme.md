@@ -30,4 +30,4 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
 ## Benchmark
 ![image](https://raw.githubusercontent.com/Yves-yuan/batch-async-http-request/master/img/benchmark1.png)
 ºáÖáÊÇÒ»´ÎÅúÁ¿ÇëÇóµÄhttp¸öÊı£¬×İÖáÊÇËù»¨·ÑµÄºÁÃëÊ±¼ä£¬¿ÉÒÔ¿´µ½Ê¹ÓÃ CompletableAsyncHttpManager ¿ÉÒÔºÜÈİÒ×µØ¾Í´ïµ½Ã¿Ãë¼¸Ç§µÄ
-httpÇëÇó¡£
+httpÇëÇó¡£ÓÃ»§»¹¿ÉÒÔÍ¨¹ıÉèÖÃsetMaxConnectionsÀ´Ìá¸ßhttpÇëÇóµÄ²¢·¢¶È»ñÈ¡¸üºÃµÄĞÔÄÜ¡£
