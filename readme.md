@@ -9,20 +9,19 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
 ## Ê¹ÓÃÀı×Ó
 `   DefaultAsyncHttpClientConfig.Builder clientBuilder = Dsl.config()
                 .setConnectTimeout(2000)
-                .setMaxConnections(1000);
-    DefaultAsyncHttpClient s = new DefaultAsyncHttpClient(clientBuilder.build());
-    CompletableAsyncHttpManager m = new CompletableAsyncHttpManager(s, 1);
-	Vector<String> urls = new Vector<>();
-    for (int i = 0; i < 1000; i++) {
-        urls.add("http://localhost:8001/test");
-    }
-	AsyncBatchHttpResult result = null;
-	try {
-        result = m.getRequestBatch(urls);
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-	`
+                .setMaxConnections(1000);`
+    `DefaultAsyncHttpClient s = new DefaultAsyncHttpClient(clientBuilder.build());`
+    `CompletableAsyncHttpManager m = new CompletableAsyncHttpManager(s, 1);`
+	`Vector<String> urls = new Vector<>();`
+    `for (int i = 0; i < 1000; i++) {`
+        `urls.add("http://localhost:8001/test");`
+    `}`
+	`AsyncBatchHttpResult result = null;`
+	`try {`
+        `result = m.getRequestBatch(urls);`
+    `} catch (Exception e) {`
+        `e.printStackTrace();`
+    `}`
 Ê×ÏÈ¹¹ÔìÒ»¸öasync-http-clientµÄclient£¬È»ºóÓÃCompletableAsyncHttpManager¶ÔËü½øĞĞÒ»´Î·â×°£¬È»ºó¹¹ÔìºÃ´ıÇëÇóµÄurlºó¾Í¿ÉÒÔÍ¨¹ıgetRequestBatch
 ½øĞĞÊı¾İµÄÇëÇóÁË¡£ÔÚ·µ»ØµÄ½á¹ûÖĞ»áÓĞÇëÇó³É¹¦µÄÊı¾İºÍÇëÇóÊ§°ÜµÄÊı¾İ¡£Ò»°ãÔÚÍøÂçÕı³£µÄÇé¿öÏÂËùÓĞÊı¾İ¶¼»á³É¹¦·µ»ØÇÒ²»»áÓĞÊı¾İ¶ªÊ§£¬µ«ÊÇÔÚÒ»Ğ©
 ¼«¶ËÇé¿öÏÂ£¬CompletableAsyncHttpManagerÔÚ³¢ÊÔÖØ´«¶à´ÎºóÈÔÈ»Ê§°Ü£¬´ËÊ±»á½«Ê§°ÜµÄurlºÍ¶ÔÓ¦µÄÒì³£ĞÅÏ¢Í¨¹ıresult·µ»Ø»ØÀ´½»¸øÓÃ»§¹ÜÀí¡£
