@@ -4,7 +4,7 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
 1¡¢async-http-clientÊ¹ÓÃÒì²½»Øµ÷µÄ·½Ê½´¦Àíresponse£¬¶øÔÚÄ³Ğ©ÒµÎñ³¡¾°ÏÂ£¬ĞèÒª½«¶à¸öresponse¾Û¼¯µ½Ò»Æğ£¬ËùÒÔ¾ÍĞèÒªÏß³ÌÍ¬²½µÄ»úÖÆ¡£
 2¡¢async-http-clientµÄÇëÇó¿ÉÄÜÒòÎª¸÷ÖÖÔ­ÒòÊ§°Ü£¬¶ÔÓÚÊı¾İÎÈ¶¨ĞÔÒªÇó¸ßµÄÒµÎñ³¡¾°ĞèÒª´¦ÀíÕâĞ©Òì³£¡£
 3¡¢async-http-client·¢ËÍhttp¹ı³ÌÖĞ»áÕ¼ÓÃ¿Í»§¶Ë¶Ë¿Ú£¬Òò´ËÍùÍùĞèÒªÏŞÖÆÄÜ¹»Í¬Ê±½øĞĞÇëÇóµÄ¸öÊı¡£
-»ùÓÚÕâĞ©Ô­Òò£¬ÎÒ·â×°ÁËÒ»¸ö¼òµ¥Ò×ÓÃÇÒĞÔÄÜ¸ßĞ§ÎÈ¶¨µÄ¹ÜÀíÆ÷CompletableAsyncHttpManager¡£
+»ùÓÚÕâĞ©Ô­Òò£¬ÎÒ·â×°ÁËÒ»¸ö¼òµ¥Ò×ÓÃÇÒĞÔÄÜ¸ßĞ§ÎÈ¶¨µÄ¹ÜÀíÆ÷ CompletableAsyncHttpManager¡£
 Ëü»á°ïÖú´¦ÀíÏß³ÌÖ®¼äµÄÊı¾İÍ¬²½ºÍÏß³ÌµÈ´ı£¬ÒÔ¼°Êı¾İµÄ´íÎóÖØ´«£¬ºÍ²¢·¢ÊıÄ¿µÄ¿ØÖÆ¡£
 ## Ê¹ÓÃÀı×Ó
 ¡¤   DefaultAsyncHttpClientConfig.Builder clientBuilder = Dsl.config()
@@ -29,3 +29,5 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
 
 ## Benchmark
 ![image](https://raw.githubusercontent.com/Yves-yuan/batch-async-http-request/master/img/benchmark1.png)
+ºáÖáÊÇÒ»´ÎÅúÁ¿ÇëÇóµÄhttp¸öÊı£¬×İÖáÊÇËù»¨·ÑµÄºÁÃëÊ±¼ä£¬¿ÉÒÔ¿´µ½Ê¹ÓÃ CompletableAsyncHttpManager ¿ÉÒÔºÜÈİÒ×µØ¾Í´ïµ½Ã¿Ãë¼¸Ç§µÄ
+httpÇëÇó¡£
