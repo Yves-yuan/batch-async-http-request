@@ -28,4 +28,4 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
 ¼«¶ËÇé¿öÏÂ£¬CompletableAsyncHttpManagerÔÚ³¢ÊÔÖØ´«¶à´ÎºóÈÔÈ»Ê§°Ü£¬´ËÊ±»á½«Ê§°ÜµÄurlºÍ¶ÔÓ¦µÄÒì³£ĞÅÏ¢Í¨¹ıresult·µ»Ø»ØÀ´½»¸øÓÃ»§¹ÜÀí¡£
 
 ## Benchmark
-http://github.com/Yves-yuan/batch-async-http-request/raw/master/img/benchmark1.png
+![image](http://github.com/Yves-yuan/batch-async-http-request/raw/master/img/benchmark1.png)
