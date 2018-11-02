@@ -7,7 +7,8 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
 »ùÓÚÕâĞ©Ô­Òò£¬ÎÒ·â×°ÁËÒ»¸ö¼òµ¥Ò×ÓÃÇÒĞÔÄÜ¸ßĞ§ÎÈ¶¨µÄ¹ÜÀíÆ÷ CompletableAsyncHttpManager¡£
 Ëü»á°ïÖú´¦ÀíÏß³ÌÖ®¼äµÄÊı¾İÍ¬²½ºÍÏß³ÌµÈ´ı£¬ÒÔ¼°Êı¾İµÄ´íÎóÖØ´«£¬ºÍ²¢·¢ÊıÄ¿µÄ¿ØÖÆ¡£
 ## Ê¹ÓÃÀı×Ó
-`   DefaultAsyncHttpClientConfig.Builder clientBuilder = Dsl.config()
+```
+   DefaultAsyncHttpClientConfig.Builder clientBuilder = Dsl.config()
                 .setConnectTimeout(2000)
                 .setMaxConnections(1000);
     DefaultAsyncHttpClient s = new DefaultAsyncHttpClient(clientBuilder.build());
@@ -22,7 +23,7 @@ async-http-clientÊÇ»ùÓÚnettyµÄÒì²½httpÇëÇó¿ò¼Ü£¬ÀûÓÃnettyµÄÒì²½»Øµ÷¿ÉÒÔÍ¬Ê±·¢ËÍ¶
     } catch (Exception e) {
         e.printStackTrace();
     }
-	`
+```
 Ê×ÏÈ¹¹ÔìÒ»¸öasync-http-clientµÄclient£¬È»ºóÓÃCompletableAsyncHttpManager¶ÔËü½øĞĞÒ»´Î·â×°£¬È»ºó¹¹ÔìºÃ´ıÇëÇóµÄurlºó¾Í¿ÉÒÔÍ¨¹ıgetRequestBatch
 ½øĞĞÊı¾İµÄÇëÇóÁË¡£ÔÚ·µ»ØµÄ½á¹ûÖĞ»áÓĞÇëÇó³É¹¦µÄÊı¾İºÍÇëÇóÊ§°ÜµÄÊı¾İ¡£Ò»°ãÔÚÍøÂçÕı³£µÄÇé¿öÏÂËùÓĞÊı¾İ¶¼»á³É¹¦·µ»ØÇÒ²»»áÓĞÊı¾İ¶ªÊ§£¬µ«ÊÇÔÚÒ»Ğ©
 ¼«¶ËÇé¿öÏÂ£¬CompletableAsyncHttpManagerÔÚ³¢ÊÔÖØ´«¶à´ÎºóÈÔÈ»Ê§°Ü£¬´ËÊ±»á½«Ê§°ÜµÄurlºÍ¶ÔÓ¦µÄÒì³£ĞÅÏ¢Í¨¹ıresult·µ»Ø»ØÀ´½»¸øÓÃ»§¹ÜÀí¡£
